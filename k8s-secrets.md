@@ -121,7 +121,27 @@ spec:
 
 ### docker-registry
 
-Secret utilisé pour l'authentification à une registry Docker.
+Secret utilisé pour l'authentification à une registry Docker, par exemple si une application doit récupérer des images privées depuis DockerHub.
+
+Création littérale :
+
+````bash
+$ kubectl create secret docker-registry registry-creds \
+  --docker-server=REGISTRY \
+  --docker-username=USERNAME \
+  --docker-password=PASSWORD \
+  --docker-email=EMAIL \
+````
+
+````yaml
+# $ kubectl get secret registry-creds -o yaml
+apiVersion: v1
+data:
+  .dockercfg: eyFGHethDV5ghHJgd7X=      # base64 encoded
+kind: Secret
+metadata:
+  # ...
+````
 
 ### TLS
 
