@@ -147,5 +147,5 @@ metadata:
 
 Secret utilisé pour la gestion des clefs privées et leur certificat associé (PKI).
 
-
+ 
 
