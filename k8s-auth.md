@@ -46,7 +46,7 @@ secrets:
 
 ### Inspection du Secret :
 
-`````yaml
+````yaml
 # $ kubectl get secret default-token-jfp6k -o yaml
 apiVersion: v1
 kind: Secret
