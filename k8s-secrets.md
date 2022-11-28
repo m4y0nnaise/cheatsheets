@@ -21,6 +21,7 @@ Secret créé à partir d'un fichier, d'un répertoire ou d'une valeur littéral
 $ kubectl create secret generic my_secret \
   --from-literal=username=admin \
   --from-literal=password=123456
+
 secret "service-creds" created
 ````
 
