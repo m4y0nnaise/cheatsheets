@@ -6,15 +6,15 @@
 
 - Certificat client
 
---client-ca-file=FILE au démarrage de l'API Server
+`--client-ca-file=FILE` au démarrage de l'API Server
 
 - Bearer tokens
 
---token-auth-file=FILE au démarrage de l'API Server
+`--token-auth-file=FILE` au démarrage de l'API Server
 
 - HTTP basic auth
 
---basic-auth-file=FILE au démarrage de l'API Server
+`--basic-auth-file=FILE` au démarrage de l'API Server
 
 ### Niveau Processus
 
