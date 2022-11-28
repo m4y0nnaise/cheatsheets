@@ -36,37 +36,38 @@ spec:           # spécification des containers lancés dans le Pod
 
 ````bash
 # créer le pod
-kubectl create -f pod-spec.yaml
+$ kubectl create -f pod-spec.yaml
 ````
 ````bash
 # lister les pods du namespace 'default'
-kubectl get pod
+$ kubectl get pod
 ````
 ````bash
 # obtenir les détails associés au pod 'my_pod'
-kubectl describe pod my_pod
+$ kubectl describe pod my_pod
+
 # forme abrégée
-kubectl describe po/my_pod
+$ kubectl describe po/my_pod
 ````
 ````bash
 # logs d'un pod [d'un container en particulier]
-kubectl logs my_pod [-c my_container]
+$ kubectl logs my_pod [-c my_container]
 ````
 ````bash
 # lancer une commande dans un container du pod
-kubectl exec my_pod [-c my_container] -- echo "Hey"
+$ kubectl exec my_pod [-c my_container] -- echo "Hey"
 ````
 ````bash
 # lancer un shell interactif dans un container en particulier
-kubectl exec -ti my_pod [-c my_container] -- /bin/bash
+$ kubectl exec -ti my_pod [-c my_container] -- /bin/bash
 ````
 ````bash
 # supprimer un pod
-kubectl delete pod my_pod
+$ kubectl delete pod my_pod
 ````
 ````bash
 # map le port du container à l'hote pour accéder à l'application sur l'hote
-kubectl port-forward my_pod HOST_PORT:CONTAINER_PORT
+$ kubectl port-forward my_pod HOST_PORT:CONTAINER_PORT
 ````
 
 ---
